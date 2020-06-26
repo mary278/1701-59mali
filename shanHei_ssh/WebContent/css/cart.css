@@ -1,0 +1,91 @@
+.cartBlock{
+	width: 1200px;
+	margin: 30px auto;
+	text-align: center;
+	/* border: dotted black; */
+}
+.cartBox{
+	width: 800px;
+	height: 150px;
+	border-top: 1px solid #C0C0C0;
+	border-bootom: 1px solid #C0C0C0;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	padding: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.cartImg{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 40px;
+}
+.cartImg img{
+	width: 100px;
+	height: 100px;
+	/*border: dotted black;*/
+}
+.cartInfo{
+	width:250px;
+	height: 100px;
+	border: yellow;
+	float: left;
+	margin-left: 50px;
+}
+.cartButton{
+	width: 100px;
+	height:100px;
+	float: left;
+	margin: 0px 10px 0px 150px;
+}
+.cbutton{
+	width: 100px;
+	height: 30px;
+	background-color: rgb(190, 0, 0);
+	color: white;
+	border: none;
+}
+.sum{
+	width: 40px;
+	height:22px;
+	margin-bottom: 15px;
+}
+.cartImg a:link{
+	
+}      /* 未访问链接*/
+.cartImg a:visited {
+
+}  /* 已访问链接 */
+.cartImg a img:hover {
+	border: 1px solid red;
+}  /* 鼠标移动到链接上 */
+.ordersButton{
+	width: 220px;
+	height:100px;
+	float: left;
+	margin: 0px 10px 0px 60px;
+	/* border: 1px solid red; */
+}
+.ordersButton td{
+	height: 25px;
+}
+.cartInfos{
+	width:250px;
+	height: 100px;
+	border: yellow;
+	float: left;
+	margin-left: 50px;
+	border: 1px solid red;
+}
+.cartInfos tr{
+	height: 50px;
+}
+/* .osum{
+	width: 30px;
+	height:22px;
+	margin-right:0px;
+	text-align:left;
+}  */

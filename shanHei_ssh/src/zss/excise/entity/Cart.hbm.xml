@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   <class name="zss.excise.entity.Cart" table="cart">
+      <id name="cartId" column="cartId">
+      	<generator class="native"></generator>
+      </id>
+      <property name="userName" column="userName" type="java.lang.String"/>
+      <property name="goodsId" column="goodsId" type="java.lang.Integer"/>
+      <property name="cartGoodsAmount" column="cartGoodsAmount" type="java.lang.Integer"/>
+   </class>
+
+</hibernate-mapping>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+<validators>
+	<field name="userName">
+		<field-validator type="requiredstring"><!-- 必填  -->
+			<param name="trim">true</param><!-- 去掉空格不能为空 -->
+			<message>用户名不能为空！</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="maxLength">10</param>
+			<param name="minLength">4</param>
+			<message>用户名长度为4到10位</message>
+		</field-validator>
+	</field>
+	
+	<field name="userPassword">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>密码不能为空！</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<message>密码长度不能低于6位</message>
+		</field-validator>
+	</field>
+	
+	<field name="userPassword2">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>确认密码不能为空！</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression">userPassword==userPassword2</param>
+			<message>两次密码不一致</message>
+		</field-validator>
+	</field>
+		
+	<field name="userPhone">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请填写电话号码！</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minlength">11</param>
+			<param name="maxlength">11</param>
+			<message>电话号码为11位哦~</message>
+		</field-validator>
+	</field>
+</validators>
+

@@ -1,0 +1,337 @@
+.header{
+	width: 1200px;
+	height: 100px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ul1{
+	margin:0px;
+	padding: 0px;
+	}
+.daohang1{
+	margin: 5px 0px 0px 0px;
+}
+.loginbar{
+	padding: 0px 5px 0px 150px;
+}
+.yu{
+	color:#888888;
+}
+/*超链接*/
+.fbpb a:link{
+	color: black;
+	text-decoration:none;
+	}  
+.fbpb a:visited {
+	color:black;
+	text-decoration:none;
+	}  /* 已访问链接 */
+.fbpb a:hover {
+	color:black;
+	text-decoration:none;
+	}
+.ul1 a:link{
+	color:#888888;
+	text-decoration:none;
+	}      /* 未访问链接*/
+.ul1 a:visited {
+	color:#888888;
+	text-decoration:none;
+	}  /* 已访问链接 */
+.ul1  a:hover {
+	color:#0d0540;
+	text-decoration:none;
+	}  /* 鼠标移动到链接上 */
+.ul2 a:link{
+	color:#101010;
+	text-decoration:none;
+	}      /* 未访问链接*/
+.ul2 a:visited {
+	color: #101010;
+	text-decoration:none;
+	}  /* 已访问链接 */
+.ul2 a:hover {
+	color:red;
+	text-decoration:none;
+	}  /* 鼠标移动到链接上 */
+/*a:active {color:#0d0540; text-decoration:none;} */ /* 鼠标点击时 */
+.content{
+		float: left;
+		width: 1200px; 
+		margin: 30px 0px 15px 0px;
+		padding: 0px;
+	}
+.logopic{
+		float: left;
+		display: inline;
+	}
+.ul1{
+	list-style: none;
+	float: none;
+	margin: 0px 0px 0px 0px;
+	}
+.ul1 > li + li:before{
+	list-style-type:none;
+	color:#888888;
+	content: "|";
+	padding: 0 8px;
+	}
+.ul1 li{
+	float: left;
+	font-size: small;
+	list-style: none;
+	}
+.daohang2{
+	margin: 0px 30px;
+	float: left;
+}
+.ul2
+{
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	height: 33px;
+	}
+.ul2 li{
+	font-family: 华文细黑;
+	float: left;
+	font-size: large;
+	padding: 3px 15px 0px 0px;
+	}
+.searchtext{
+	width:200px;
+	height:29px;
+}
+.btn btn-default{
+	background-color: none;
+	text-align:center;
+	margin: 0px;
+	width:30px;
+	height:29px;
+}
+.search{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 30px 0px 180px;
+	float: right;
+}
+.carousel slide{
+	width: 100%;
+	height: 448px;
+}
+.flashBlackProduct{
+	width: 1200px;
+	height: auto;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.fbpb{
+	width: 1200px;
+	height: auto;
+	font-family: "Microsoft YaHei";
+	color: black;
+	float: none;
+	font-size: 30px;
+	text-align: center;
+}
+.pic1{
+	width: 1200px;
+	margin-top: 16px;
+}
+.pic1 td{
+	margin: 0px;
+}
+.pic1 img{
+	width: 295px;
+	height: 278px;
+	border: 1px solid #C0C0C0;
+}
+.productBar{
+	text-align: center;
+	width: 24px;
+	height: 4px;
+	background-color: rgb(153, 0, 0);	
+	margin: 0px auto;
+}
+.pic1 a:link{
+	
+}      /* 未访问链接*/
+.pic1 a:visited {
+
+}  /* 已访问链接 */
+.pic1 a img:hover {
+	border: solid red;
+}  /* 鼠标移动到链接上 */
+.flashBlackSmallProduct{
+	width: 1200px;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+.flashBlackSmallProduct img{
+	width: 386px;
+	height: 190px;
+}
+.bottom{
+	text-align: center;
+	background-color: #f0f0f0;
+	width: 100%px;
+	height: 100px;
+	margin-top: 60px;
+	padding-top: 20px;
+}
+.daohangBottom{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.daohangBottom td{
+	width: 80px;
+	height: auto;
+}
+.daohangBottom a:link{
+	color: black;
+	text-decoration:none;
+}
+.daohangBottom a:visited {
+	color: black;
+	text-decoration:none;
+}
+.daohangBottom a:hover {
+	color:red;
+	text-decoration:none;
+}
+.info1{
+	height: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.info1 td{
+	width: 200px;
+	color: black;
+}
+.info2{
+	height: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.info2 td{
+	width: 200px;
+	color: black;
+}
+
+
+.returnTop{
+	font-size: 30px;
+	color: #F0F0F0;
+}
+
+.phoneProduct{
+	width: 1200px;
+	height: auto;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.shouji{
+	width: 1200px;
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.phoneSmallProduct{
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.phoneProduct a:link{
+	
+}      /* 未访问链接*/
+.phoneProduct a:visited {
+
+}  /* 已访问链接 */
+.phoneProduct a img:hover {
+	border: solid red;
+}
+.pic2{
+	width: 291px;
+	height: 592px;
+	float: left;
+}
+.pic3{
+	width: 594px;
+	height: 290px;
+	margin: 0px 12px 12px 12px; 
+	float: left;
+}
+.pic4{
+	width: 290px;
+	height: 290px;
+	margin-bottom: 12px;
+	float: left;
+}
+.pic5 img{
+	width: 290px;
+	height: 290px;
+	margin-left: 12px;
+	float: left;
+}
+body{
+	margin: 0;
+	/* background-color: #f2f2f2; */
+}
+.reg1{
+	text-align: center;
+}
+.regCenter{
+	width: 600px;
+	height: 500px;
+	margin: 30px auto;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+.regCenter img{
+	margin-top: 20px;
+}
+.regCenter table{
+	margin: auto;
+	font-size:15px;
+	margin-top: 45px;
+}
+.regCenter table tr{
+	height: 40px;
+	border-spacing:20px 0px; 
+}
+.reg_input{
+	width: 200px;
+	height: 30px;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.reg_submit{
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	margin-top: 15px;
+}
+.reg_login{
+	float:right;
+	margin:10px 10px 20px -90px ;
+	font-size: 13px;
+	font-color:blue;
+}
+.login_msg{
+	font-color:red;
+}

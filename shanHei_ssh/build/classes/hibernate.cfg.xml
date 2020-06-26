@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+		<!-- 指定方言 -->
+        <property name="hibernate.dialect.MySQLDialect"/>
+
+		<!-- c3p0连接池设定 -->
+        <!-- 使用c3p0连接池 配置连接池提供的供应商 -->
+        <property name="connection.provider_class">
+        	org.hibernate.connection.C3P0ConnectionProvider
+        </property>
+        <!-- 在连接池中可用的数据库连接的最少数目 -->
+        <property name="c3p0.min_size">5</property>
+        <!-- 在连接池中可用的数据库连接的最大数目 -->
+        <property name="c3p0.max_size">20</property>
+        <!-- 设置数据库连接的过期时间，以毫秒为单位，如果连接池中的某个数据连接处于空闲状态的时间超过了timeout的时间，就会从连接池中清除 -->
+        <property name="c3p0.timeout">120</property>
+        <!-- 每3000秒检查所有连接池中的空闲连接 以秒为单位 -->
+        <property name="c3p0.idle_test_period">3000</property>
+
+        
+<!-- java.lang.ExceptionInInitializerError
+	
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+ -->
+
+		<!-- 配置数据库信息 -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/shanhei_ssh</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456</property>
+        
+         <!-- 可选项 -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+
+		<!-- 配置映射文件信息 -->
+        <mapping resource="zss/excise/entity/User.hbm.xml"/>
+        <mapping resource="zss/excise/entity/Goods.hbm.xml"/>
+        <mapping resource="zss/excise/entity/Cart.hbm.xml"/>
+        <mapping resource="zss/excise/entity/Orders.hbm.xml"/>
+        
+
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+		<action name="login" class="zss.excise.action.UserAction" method="login">
+			<result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="regist" class="zss.excise.action.UserAction" method="regist">
+			<result name="success">/login.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="logout" class="zss.excise.action.UserAction" method="logout">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="update" class="zss.excise.action.UserAction" method="update">
+			<result name="success">/userInfo.jsp</result>
+			<result name="input">/userinfo.jsp</result>
+		</action>
+		<action name="goodsInfo" class="zss.excise.action.GoodsAction" method="getGoodsInfo">
+			<result name="success">/production.jsp</result>
+		</action>
+		<action name="getGoodsList" class="zss.excise.action.GoodsAction" method="getGoodsList">
+			<result name="success">/search.jsp</result>
+		</action>
+		
+		
+		
+		<action name="addOrders" class="zss.excise.action.OrdersAction" method="addOrders">
+			<result name="success">/user/orders.jsp</result>
+			<result name="error">/user/orders.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="getOrdersList" class="zss.excise.action.OrdersAction" method="getOrdersList">
+			<result name="success">/user/orders.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="dropOrders" class="zss.excise.action.OrdersAction" method="dropOrders">
+			<result name="success">/user/orders.jsp</result>
+			<result name="error">/user/orders.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="addCart" class="zss.excise.action.CartAction" method="addToCart">
+			<result name="success">/user/cart.jsp</result>
+			<result name="error">/user/cart.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="getCartList" class="zss.excise.action.CartAction" method="getCartList">
+			<result name="success">/user/cart.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="upadteAmount" class="zss.excise.action.CartAction" method="upadteAmount">
+			<result name="success">/user/cart.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="dropCartOrders" class="zss.excise.action.CartAction" method="dropCartOrders">
+			<result name="success">/user/orders.jsp</result>
+			<result name="error">/user/orders.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="dropCart" class="zss.excise.action.CartAction" method="dropCart">
+			<result name="success">/user/cart.jsp</result>
+			<result name="error">/user/cart.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+	</package>
+</struts>

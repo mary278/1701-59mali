@@ -1,0 +1,30 @@
+.panel-group{
+	/* background-color:red; */
+	margin: 75px auto;
+	width: 800px;
+	height: auto;
+	text-align: center;
+}
+.panel-heading{
+	padding: 40px;
+	text-align: center;
+	width: 800px;
+	height: 100px;
+}
+.panel-body{
+	text-align: center;
+}
+.panel-body table{
+	text-align: center;
+	margin: 10px auto;
+}
+.panel-body tr{
+	height: 10px;
+}
+.userFont{
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+.xiugai{
+	float: right;
+}

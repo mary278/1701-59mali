@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+   <hibernate-mapping>
+   <class name="zss.excise.entity.Goods" table="goods">
+      <id name="goodsId" column="goodsId">
+      	<generator class="native"></generator>
+      </id>
+      <property name="goodsName" column="goodsName" type="java.lang.String"/>
+      <property name="goodsPrice" column="goodsPrice" type="java.lang.Double"/>
+      <property name="goodsIntroduce" column="goodsIntroduce" type="java.lang.String"/>
+      <property name="goodsPic" column="goodsPic" type="java.lang.String"/>
+      <property name="goodsColor" column="goodsColor" type="java.lang.String"/>
+      <property name="goodsVersion" column="goodsVersion" type="java.lang.String"/>
+      <property name="goodsSetMeal" column="goodsSetMeal" type="java.lang.String"/>
+      <property name="goodsType" column="goodsType" type="java.lang.String"/>
+   </class>
+
+</hibernate-mapping>
